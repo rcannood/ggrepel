@@ -155,25 +155,27 @@ All of them are listed below. See the [ggplot2 documentation about aesthetic spe
 
 [aes]: https://ggplot2.tidyverse.org/articles/ggplot2-specs.html
 
-|Aesthetic       | Default      | Description
-|--------------- | ------------ | ------------------------------------------------
-|`color` | `"black"`    | text and label border color
-|`size` | `3.88`    | font size
-|`angle` | `0`    | angle of the text label
-|`alpha` | `NA`    | transparency of the text label
-|`family` | `""`    | font name
-|`fontface` | `1`    | "plain", "bold", "italic", "bold.italic"
-|`lineheight` | `1.2`    | line height for text labels
-|`hjust` | `0.5`    | horizontal justification, different from geom_text()
-|`vjust` | `0.5`    | vertical justification, different from geom_text()
-|`point.size` | `1`    | size of each point for each text label
-|`segment.linetype` | `1`    | line segment solid, dashed, etc.
-|`segment.color` | `"black"`    | line segment color
-|`segment.size`  | `0.5 mm`     | line segment thickness
-|`segment.alpha` | `1.0`        | line segment transparency
-|`segment.curvature` | `0`      | numeric, negative for left-hand and positive for right-hand curves, 0 for straight lines
-|`segment.angle` | `90`         | 0-180, less than 90 skews control points toward the start point
-|`segment.ncp`   | `1`          | number of control points to make a smoother curve
+|Aesthetic           | Default      | Description
+|------------------- | ------------ | ------------------------------------------------
+|`color`             | `"black"`    | text and label border color
+|`size`              | `3.88`       | font size
+|`angle`             | `0`          | angle of the text label
+|`alpha`             | `NA`         | transparency of the text label
+|`family`            | `""`         | font name
+|`fontface`          | `1`          | "plain", "bold", "italic", "bold.italic"
+|`lineheight`        | `1.2`        | line height for text labels
+|`hjust`             | `0.5`        | horizontal justification, different from geom_text()
+|`vjust`             | `0.5`        | vertical justification, different from geom_text()
+|`point.size`        | `1`          | size of each point for each text label
+|`segment.linetype`  | `1`          | line segment solid, dashed, etc.
+|`segment.color`     | `"black"`    | line segment color
+|`segment.size`      | `0.5 mm`     | line segment thickness
+|`segment.alpha`     | `1.0`        | line segment transparency
+|`segment.curvature` | `0`          | numeric, negative for left-hand and positive for right-hand curves, 0 for straight lines
+|`segment.angle`     | `90`         | 0-180, less than 90 skews control points toward the start point
+|`segment.ncp`       | `1`          | number of control points to make a smoother curve
+|`bg.color`          | `NA`         | set to a color to add shadows (or glow) behind labels
+|`bg.r`              | `0.1`        | the radius of the shadows, in function of label size
 
 ## Examples
 
