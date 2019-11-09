@@ -600,7 +600,11 @@ just_dir <- function(x, tol = 0.001) {
   out
 }
 
-# copied and slightly adapted from shadowtext
+# adapted from shadowtext, at the time of writing located at:
+# https://github.com/GuangchuangYu/shadowtext/blob/325d25919b28ccd4184c6363c11c8c26e822dd95/R/shadowtext-grob.R#L28
+# this function was modified to always return a gList, whether bg.colour is NA or not.
+# in addition, each background textgrob is made to have a unique name, otherwise
+# it can mess up the plotting order.
 shadowtextGrob <- function(
   label, x = unit(0.5, "npc"), y = unit(0.5, "npc"),
   just = "centre", hjust = NULL, vjust = NULL, rot = 0, check.overlap = FALSE,
@@ -620,7 +624,6 @@ shadowtextGrob <- function(
 
     theta <- seq(pi/8, 2*pi, length.out=16)
     char <- "X"
-    # char <- substring(label[1], 1, 1)
     r <- bg.r[1]
 
     if (!is.unit(x)) {
